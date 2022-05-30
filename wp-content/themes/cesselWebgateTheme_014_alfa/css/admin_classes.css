@@ -1,0 +1,15 @@
+.group-add { background-color: #fff6a8; }
+
+.group-add td.acf-row-handle.order { font-weight: bold; background-color: #fff9d4 !important; }
+
+.class-add { background-color: #ffb3b8; }
+
+.class-add td.acf-row-handle.order { font-weight: bold; background-color: #ffe3e6 !important; }
+
+.weekday-add { background-color: #e4ffcf; }
+
+.weekday-add td.acf-row-handle.order { font-weight: bold; background-color: #f6fff1 !important; }
+
+.lesson-add { background-color: #add1ff; }
+
+.lesson-add td.acf-row-handle.order { font-weight: bold; background-color: #d2e4ff !important; }

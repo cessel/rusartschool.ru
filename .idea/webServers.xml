@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c83fde63-2864-4cbe-96a6-a8e807b83162" name="[MSK] Сайт rusartschool" url="">
+        <fileTransfer rootFolder="/home/c/cesselhm/" accessType="SFTP" host="cesselhm.beget.tech" port="22" sshConfigId="b23aa248-9077-49a9-b7e4-f3b401fa4a9e" sshConfig="[MSK] Сайт РОДИН VPS">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

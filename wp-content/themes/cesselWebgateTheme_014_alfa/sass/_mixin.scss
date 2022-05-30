@@ -1,0 +1,58 @@
+/* Responsive options */
+
+$less_sm: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$more_lg: 1440px;
+$youtube_bg: '/wp-content/themes/cesselWebgateTheme_014_alfa/img/play.png';
+@mixin screeen-size($media) {
+    @if $media == less_sm
+        {
+            @media (min-width: $less_sm) { @content; }
+        }
+    @else if $media == sm {
+        @media (min-width: $sm) { @content; }
+        }
+    @else if $media == md {
+        @media (min-width: $md) { @content; }
+        }
+    @else if $media == lg {
+        @media (min-width: $lg) { @content; }
+        }
+    @else if $media == more_lg {
+        @media (min-width: $more_lg) { @content; }
+        }
+    }
+	
+@mixin site_btn
+    {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+        padding:10px 15px;
+        font-size:1.2em;
+        text-decoration: none !important;
+}
+@mixin coord($t,$r,$b,$l)
+{
+    top:$t;
+    bottom:$b;
+    left:$l;
+    right:$r;
+    }
+@mixin overlay
+    {
+        position:absolute;
+        @include coord(0,0,0,0);
+    }
+@mixin center-flex
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    }
+@mixin start-flex
+{
+    display:flex;
+    justify-content:flex-start;
+    }

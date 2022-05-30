@@ -1,0 +1,1 @@
+<? get_header('new');get_footer();

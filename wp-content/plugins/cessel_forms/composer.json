@@ -1,0 +1,16 @@
+{
+    "name": "cesse/cessel_forms",
+    "description": "Custom forms for multisite",
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "Classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Ignatov",
+            "email": "cessel@yandex.ru"
+        }
+    ],
+    "require": {}
+}
