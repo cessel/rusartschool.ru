@@ -1,0 +1,28 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin          # классика...
+Disallow: /?                # все параметры запроса на главной
+Disallow: /wp-              # все файлы WP: /wp-json/, /wp-includes, /wp-content/plugins
+Disallow: *?s=              # поиск
+Disallow: *&s=              # поиск
+Disallow: /search           # поиск
+Disallow: /author/          # архив автора
+Disallow: *?attachment_id=  # страница вложени¤. воообще-то на ней редирект...
+Disallow: *?customize_changeset_uuid=  # страница настроект тема - обычно недоступна роботу
+Disallow: */trackback
+Disallow: */feed            # все фиды
+Disallow: */embed           # все встраивани
+Disallow: */page/           # все виды пагинации
+Allow: */uploads            # открываем uploads
+Allow: /*/*.js              # внутри /wp- (/*/ - дл¤ приоритета)
+Allow: /*/*.css             # внутри /wp- (/*/ - дл¤ приоритета)
+Allow: /wp-*.png            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpg            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpeg           # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.gif            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-admin/admin-ajax.php
+
+Host: https://vodniy.rusartschool.ru
+
+Sitemap: https://vodniy.rusartschool.ru/sitemap_index.xml
+

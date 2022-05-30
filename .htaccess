@@ -1,0 +1,53 @@
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+#php_flag log_errors on
+
+# BEGIN RHC
+# END RHC
+
+# BEGIN WordPress
+RewriteEngine On
+RewriteBase /
+
+#RewriteCond %{HTTP_HOST} ^rechnoy.rusartschool.ru [NC]
+#RewriteRule (.*) https://vodniy.rusartschool.ru/ [L,R=301,QSA]
+#RewriteCond %{HTTP_HOST} ^rusartschool.ru [NC]
+#RewriteRule (.*) https://vodniy.rusartschool.ru/ [L,R=301,QSA]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+
+
+
+RewriteRule ^index\.php$ - [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+RewriteRule ^(.*\.php)$ $1 [L]
+RewriteRule . index.php [L]
+
+# END WordPress
+
+# Browser cache expiration
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 2 days"
+</IfModule>
+# Browser cache expiration
