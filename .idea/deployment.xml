@@ -2,11 +2,36 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="On explicit save action" serverName="[MSK] Сайт rusartschool" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
     <serverData>
+      <paths name="[FREEL] Сайт ПромСпецСтрой - pro-ss.ru">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="[KRD] Сайт attorneypartners.loc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="[MSK] Сайт adilhanovlaw.ru">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="[MSK] Сайт rusartschool">
         <serverdata>
           <mappings>
             <mapping deploy="/izostudiya/public_html" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/izostudiya/public_html/wp-admin" />
+            <excludedPath path="/izostudiya/public_html/wp-includes" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
