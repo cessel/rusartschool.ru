@@ -31,6 +31,8 @@
           <excludedPaths>
             <excludedPath path="/izostudiya/public_html/wp-admin" />
             <excludedPath path="/izostudiya/public_html/wp-includes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/msk.rodin.site.7z" />
+            <excludedPath path="/izostudiya/public_html/msk.rodin.site.7z" />
           </excludedPaths>
         </serverdata>
       </paths>
